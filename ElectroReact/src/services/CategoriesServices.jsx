@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 const API='https://dummyjson.com/products/categories';
-import React from 'react'
+
 
 const CategoriesServices = () => {
  const [datos, setDatos] = useState([])
