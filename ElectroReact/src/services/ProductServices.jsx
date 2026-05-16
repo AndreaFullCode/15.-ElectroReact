@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const API='https://dummyjson.com/products/category/smartphones';
+const API='https://dummyjson.com/products/category/';
 
-const ProductServices = () => {
-const [datos, setDatos] = useState([])
+
+
+const ProductServices = ({cat}) => {
+    const URI=API+cat; //union de la ruta mas el parametro
+    const [datos, setDatos] = useState([])
     const getDatos = async () =>{
         try {
-          const response = await fetch(API);
+          const response = await fetch(URI);
           const data = await response.json();
           //console.log(data)
           setDatos(data.products); //porque el json tiene nombre
@@ -16,7 +19,7 @@ const [datos, setDatos] = useState([])
       };
       useEffect(()=>{
         getDatos();
-      },[]);
+      },[cat]);
 
   return (
     <>

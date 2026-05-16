@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
             <Link to={'/home'} href="index.html" className="nav-item nav-link active">Home</Link>
-            <Link to={'/shop'} href="shop.html" className="nav-item nav-link">Shop</Link>
+            <Link to={'/shop/laptops'} href="shop.html" className="nav-item nav-link">Shop</Link>
             <Link to={'/singlepage'} href="single.html" className="nav-item nav-link">Single Page</Link>
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

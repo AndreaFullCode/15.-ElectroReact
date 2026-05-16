@@ -12,7 +12,7 @@ const ProductsOffer = () => {
             <h3 className="text-primary">Smart Camera</h3>
             <h1 className="display-3 text-secondary mb-0">40% <span className="text-primary fw-normal">Off</span></h1>
           </div>
-          <img src="img/product-1.png" className="img-fluid" alt />
+          <img src="/img/product-1.png" className="img-fluid" alt />
         </a>
       </div>
       <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
@@ -22,7 +22,7 @@ const ProductsOffer = () => {
             <h3 className="text-primary">Smart Whatch</h3>
             <h1 className="display-3 text-secondary mb-0">20% <span className="text-primary fw-normal">Off</span></h1>
           </div>
-          <img src="img/product-2.png" className="img-fluid" alt />
+          <img src="/img/product-2.png" className="img-fluid" alt />
         </a>
       </div>
     </div>

@@ -24,8 +24,8 @@ const CategoriesServices = () => {
    {datos && datos.map((item, index) => (
 <li>
               <div className="categories-item">
-                <a href="#" className="text-dark">
-                  {item.name}</a>
+                <Link to={`/shop/${item.slug}`} href="#" className="text-dark">
+                  {item.name}</Link>
                 
               </div>
             </li>

@@ -2,8 +2,14 @@ import React from 'react'
 import CategoriesServices from '../../services/CategoriesServices'
 import ProductServices from '../../services/ProductServices'
 
-const ShopPage = () => {
+
+const ShopPage = ({cat}) => {
+
+   
+    
+
   return (
+    
     //Shop Page Start
    <div className="container-fluid shop py-5">
   <div className="container py-5">
@@ -22,7 +28,7 @@ const ShopPage = () => {
       </div>
       <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
         <div className="rounded mb-4 position-relative">
-          <img src="img/product-banner-3.jpg" className="img-fluid rounded w-100" style={{height: 250}} alt="Image" />
+          <img src="/img/product-banner-3.jpg" className="img-fluid rounded w-100" style={{height: 250}} alt="Image" />
           <div className="position-absolute rounded d-flex flex-column align-items-center justify-content-center text-center" style={{width: '100%', height: 250, top: 0, left: 0, background: 'rgba(242, 139, 0, 0.3)'}}>
             <h4 className="display-5 text-primary">SALE</h4>
             <h3 className="display-4 text-white mb-4">Get UP To 50% Off</h3>
@@ -69,7 +75,7 @@ const ShopPage = () => {
           <div id="tab-5" className="tab-pane fade show p-0 active">
             <div className="row g-4 product">
               
-              <ProductServices/>
+              <ProductServices cat={cat}/>
               
               <div className="col-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div className="pagination d-flex justify-content-center mt-5">
@@ -92,7 +98,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-3.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-3.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -121,7 +127,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-4.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-4.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -150,7 +156,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-5.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-5.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -179,7 +185,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-6.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-6.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -208,7 +214,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-7.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-7.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -237,7 +243,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-8.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-8.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -266,7 +272,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-9.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-9.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -295,7 +301,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-12.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-12.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -324,7 +330,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-13.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-13.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -353,7 +359,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-14.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-14.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -382,7 +388,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-15.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-15.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
@@ -411,7 +417,7 @@ const ShopPage = () => {
                   <div className="row g-0">
                     <div className="col-5">
                       <div className="products-mini-img border-end h-100">
-                        <img src="img/product-16.png" className="img-fluid w-100 h-100" alt="Image" />
+                        <img src="/img/product-16.png" className="img-fluid w-100 h-100" alt="Image" />
                         <div className="products-mini-icon rounded-circle bg-primary">
                           <a href="#"><i className="fa fa-eye fa-1x text-white" /></a>
                         </div>
