@@ -5,6 +5,7 @@ import ProductsOffer from './home/ProductsOffer'
 import ProductsList from './home/ProductsList'
 import ProductsBanner from './home/ProductsBanner'
 import BestSeller from './home/BestSeller'
+import OurProducts from './home/OurProducts'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
    <CarouselStart/>
    <Services/>
    <ProductsOffer/>
+   <OurProducts/>
    <ProductsBanner/>
    <ProductsList/>
    <ProductsOffer/>
